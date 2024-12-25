@@ -1,36 +1,41 @@
 /* Style général */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #f0f8ff, #d4e6f1);
     color: #333;
 }
 
 /* En-tête */
 header {
-    background: #333;
+    background: #003366;
     color: #fff;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 header p {
-    margin: 10px 0 0;
+    margin-top: 10px;
     font-size: 1.2em;
+    font-style: italic;
 }
 
 /* Navigation */
 nav {
-    background: #555;
-    padding: 10px;
-    text-align: center;
+    background: #00509e;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -38,32 +43,38 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 1.1em;
-    transition: color 0.3s;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    color: #ffd700; /* Changement de couleur au survol */
+    background: #ffd700;
+    color: #003366;
 }
 
 /* Conteneur principal */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 900px;
+    margin: 30px auto;
     padding: 20px;
     background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Titres des sections */
 .container h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
+    border-bottom: 3px solid #00509e;
+    padding-bottom: 10px;
     margin-bottom: 20px;
-    color: #333;
+    font-size: 2em;
+    color: #003366;
 }
 
-/* Liste de projets */
+/* Listes de projets */
 ul {
     list-style-type: none;
     padding: 0;
@@ -71,42 +82,67 @@ ul {
 
 li {
     margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 li h3 {
     margin: 0;
-    color: #007bff;
+    color: #00509e;
+    font-size: 1.5em;
 }
 
 li p {
     margin: 10px 0;
-    color: #555;
+    color: #666;
+    font-size: 1em;
 }
 
 /* Boutons de téléchargement */
 .download {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 15px;
-    background: #007bff;
+    padding: 10px 20px;
+    background: #00509e;
     color: #fff;
     text-decoration: none;
+    font-size: 1em;
     border-radius: 5px;
-    transition: background 0.3s;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .download:hover {
-    background: #0056b3;
+    background: #003366;
+    transform: translateY(-3px);
 }
 
 /* Section Contact */
 #contact a {
-    color: #007bff;
+    color: #00509e;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #contact a:hover {
     text-decoration: underline;
+}
+
+/* Pied de page (si besoin plus tard) */
+footer {
+    text-align: center;
+    background: #003366;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9em;
 }
 
 /* Adaptation pour les petits écrans */
@@ -118,5 +154,13 @@ li p {
     nav a {
         font-size: 1em;
         margin: 0 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    li h3 {
+        font-size: 1.2em;
     }
 }
