@@ -1,42 +1,43 @@
-/* Styles de base */
+/* Style général */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Header */
+/* En-tête */
 header {
-    background: #007BFF;
-    color: white;
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 1rem 0;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.5em;
 }
 
 header p {
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
+    margin: 10px 0 0;
+    font-size: 1.2em;
 }
 
 /* Navigation */
 nav {
-    background: #333;
-    color: white;
-    padding: 0.5rem;
+    background: #555;
+    padding: 10px;
     text-align: center;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 
 nav a:hover {
@@ -45,88 +46,65 @@ nav a:hover {
 
 /* Conteneur principal */
 .container {
-    max-width: 900px;
+    max-width: 800px;
     margin: 20px auto;
-    background: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Titres des sections */
-h2 {
-    color: #333;
-    font-size: 2rem;
+/* Section projets */
+.container h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.project {
     margin-bottom: 20px;
 }
 
-/* Projets */
-.project {
-    margin-bottom: 30px;
-}
-
 .project h3 {
-    font-size: 1.8rem;
     color: #333;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .project p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
-/* Boutons de téléchargement */
-.download {
+.project .download {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px;
-    background: #007BFF;
-    color: white;
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.1rem;
+    transition: background 0.3s;
 }
 
-.download:hover {
+.project .download:hover {
     background: #0056b3;
 }
 
-/* Contact */
-#contact {
-    margin-top: 50px;
-    text-align: center;
+/* Section contact */
+#contact a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-#contact p {
-    font-size: 1.2rem;
+#contact a:hover {
+    text-decoration: underline;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Adaptation pour les petits écrans */
+@media (max-width: 600px) {
     header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1rem;
+        font-size: 2em;
     }
 
     nav a {
-        font-size: 1rem;
+        font-size: 1em;
         margin: 0 10px;
-    }
-
-    .container {
-        padding: 15px;
-    }
-
-    .project h3 {
-        font-size: 1.5rem;
-    }
-
-    .download {
-        font-size: 1rem;
     }
 }
