@@ -31,6 +31,7 @@ nav {
     background: #555;
     padding: 10px;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
@@ -38,10 +39,11 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.1em;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ffd700; /* Changement de couleur au survol */
 }
 
 /* Conteneur principal */
@@ -53,26 +55,36 @@ nav a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Section projets */
+/* Titres des sections */
 .container h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.project {
+/* Liste de projets */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
     margin-bottom: 20px;
 }
 
-.project h3 {
-    color: #333;
-    margin: 10px 0;
+li h3 {
+    margin: 0;
+    color: #007bff;
 }
 
-.project p {
+li p {
     margin: 10px 0;
+    color: #555;
 }
 
-.project .download {
+/* Boutons de téléchargement */
+.download {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
@@ -83,11 +95,11 @@ nav a:hover {
     transition: background 0.3s;
 }
 
-.project .download:hover {
+.download:hover {
     background: #0056b3;
 }
 
-/* Section contact */
+/* Section Contact */
 #contact a {
     color: #007bff;
     text-decoration: none;
